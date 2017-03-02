@@ -1,7 +1,5 @@
 package SortAlgorithmDemo
 
-import "fmt"
-
 func selectsort(data []int) {
     for i := 0; i < len(data) - 1; i++ {
         var min int = i;
@@ -19,14 +17,7 @@ func selectsort(data []int) {
 }
 
 func swap(data []int, a int, b int){
-     var temp int = data[a];
+    var temp int = data[a];
     data[a] = data[b];
     data[b] = temp;
-}
-
-func main() {
-	fmt.Println("selectsort")
-	s := []int{1, 3, 6, 9, 2, 3, 0}
-	selectsort(s);
-	fmt.Println(s)
 }

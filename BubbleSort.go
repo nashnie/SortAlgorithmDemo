@@ -61,7 +61,7 @@ func bubblecocktailsort(data []int) {
 }
 
 func swap(data []int, a int, b int){
-     var temp int = data[a]
+    var temp int = data[a]
     data[a] = data[b]
     data[b] = temp
 }
