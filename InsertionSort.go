@@ -17,7 +17,6 @@ func insertionsortwithbinarysearch(data []int) {
         var temp int = data[i]
 		var j int
         var binarysearchIndex = binarysearch(data, 0, i, i)
-		fmt.Println(binarysearchIndex)
 		if binarysearchIndex >= 0 {
 			for j = i - 1; j >= binarysearchIndex; j-- {
             	data[j + 1] = data[j]
